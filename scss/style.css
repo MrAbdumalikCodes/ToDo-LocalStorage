@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(53, 7, 103) 79%, rgb(67, 9, 121) 100%);
+}
+
+.wrapper {
+  margin: 120px auto;
+  max-width: 400px;
+  width: 100%;
+  background-color: #f1f2f6;
+  border-radius: 8px;
+  padding: 25px;
+}
+.wrapper .header {
+  font-size: 30px;
+  font-weight: 600;
+}
+.wrapper .inputField {
+  display: flex;
+  height: 45px;
+  width: 100%;
+  margin: 20px 0;
+}
+.wrapper .inputField input {
+  outline: 0;
+  width: 85%;
+  height: 100%;
+  font-size: 17px;
+  border-radius: 3px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+}
+.wrapper .inputField button {
+  width: 60px;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  background-color: #be2edd;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 5px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.wrapper .inputField button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.wrapper .todoList {
+  max-height: 250px;
+  overflow-y: auto;
+}
+.wrapper .todoList li {
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  background-color: #c7ecee;
+  border-radius: 3px;
+  padding: 0 15px;
+  cursor: default;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.wrapper .todoList li span {
+  position: absolute;
+  right: -45px;
+  color: #fff;
+  width: 45px;
+  text-align: center;
+  background-color: #0097e6;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.wrapper .todoList li:hover span {
+  right: 0;
+}
+.wrapper .footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+.wrapper .footer button {
+  border: 0;
+  outline: 0;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 3px;
+  padding: 6px 10px;
+}/*# sourceMappingURL=style.css.map */
